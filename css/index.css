@@ -1,0 +1,249 @@
+:root {
+    /* color */
+    --naver-green : #21c531;
+    --background-gray : #f6f8fa;
+    /* font-black */
+    --font-black1 : #222;
+    --font-black2 : #444;
+    --font-black3 : #666;
+    --font-black4 : #999;
+    /* font-white */
+    --font-white1 : #fff;
+    --font-white2 : #fafafa;
+    /* footer font color */
+    --footer-font-light : #b3b3b3;
+    --footer-font-dakr : #777;
+    /* size */
+    --container-size : 1000px;
+}
+.utit-link {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+}
+.hide-text {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+
+}
+body {
+    background-color: var(--background-gray);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+h1 {
+    background: url(../img/spr_intro.png) no-repeat 0 -98px;
+	 width: 78px;
+	 height: 29px;
+    position: relative;
+}
+.lang {
+   color: var(--font-black3);
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.lang::after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 4px solid var(--font-black3);
+  border-top-color: var(--font-black3);
+}
+.join {
+    color: var(--font-black1);
+}
+.login-button {
+    display: block;
+    color: var(--font-white2);
+    background-color: var(--naver-green);
+    width: 88px;
+    height: 32px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 32px;
+}
+.header-right {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 32px;
+}
+.recommen-band-content {
+    position: relative;
+}
+
+/* header 마무리 */
+
+.wapper {
+
+}
+
+#intro {
+  padding-top: 120px;
+}
+
+.section-container {
+    width: var(--container-size);
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+.intro-image {
+    width: 550px;
+}
+.intro-text-container {
+    margin-top: -80px;
+
+}
+.intro-heading {
+    font-size: 48px;
+    margin-bottom: 24px;
+    line-height: 1.21;
+}
+.intro-heading+p {
+    margin-bottom: 16px;
+}
+.intro-text-container > a {
+    display: block;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 2px;
+}
+.intro-login {
+    margin-bottom: 16px;
+    background-color: var(--naver-green);
+    color: var(--font-white1);
+}
+.intro-join {
+    background-color: var(--font-white1);
+    border: 1px solid #ebebeb;
+    margin-bottom: 32px;
+}
+.intro-explane {
+    margin-bottom: 16px;
+    
+}
+.intro-text-container>p{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.green-link {
+    color: var(--naver-green);
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 16px;
+}
+/* section intro 마무리 */
+
+#slogan {
+    min-width: 1000px;
+}
+
+.slogan-inner-container {
+    height: 540px;
+    background-image: url(../img/bg_intro.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: var(--font-white1);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.slogan-heading {
+    margin-bottom: 32px;
+    font-size: 40px;
+}
+.slogan-text {
+    line-height: 150%;
+}
+.slogan-contents-container{
+     width: var(--container-size);
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 50px 0;
+}
+.slogan-contents {
+    width: 300px;
+
+}
+.slogan-contents > figure {
+    /* width: 300px; */
+    margin-bottom: 16px;
+}
+.slogan-contents-heading {
+    font-size: 24px;
+    color: var(--font-black1);
+    margin-bottom: 16px;
+
+}
+.slogan-contents-heading+p {
+    font-size: 15px;
+    line-height: 150%;
+}
+/* slogan 마무리 */
+
+#recommend {
+    background-color: #eef0f3;
+    padding-top: 56px;
+    min-width: 1000px;
+}
+
+.recommend-container {
+    width: var(--container-size);
+    margin: 0 auto;
+}
+
+.recommend-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-heading {
+    font-size: 24px;
+    color: var(--font-black1);
+}
+
+.recommend-title > a {
+    font-size: 14px;
+    color: var(--font-black2);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.recommend-title > a::after {
+    content: '';
+    display: block;
+    border-top: 2px solid var(--font-black4);
+    border-right: 2px solid var(--font-black4);
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+
+}
+
+.band-image {
+    width: 100px;
+}
