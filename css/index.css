@@ -64,6 +64,11 @@ h1 {
   border-top: 4px solid var(--font-black3);
   border-top-color: var(--font-black3);
 }
+
+.lang:hover{
+    text-decoration: underline;
+}
+
 .join {
     color: var(--font-black1);
 }
@@ -77,6 +82,20 @@ h1 {
     text-align: center;
     line-height: 32px;
 }
+
+.login-button:hover {
+    box-shadow: 0 2px 8px #21c53150;
+}
+.intro-login:hover{
+    box-shadow: 0 2px 8px #21c53150;
+}
+.intro-join:hover{
+    box-shadow: 0 2px 8px #00000030;
+}
+.join:hover{
+    text-decoration: underline;
+}
+
 .header-right {
     display: flex;
     font-size: 14px;
@@ -135,6 +154,7 @@ h1 {
     background-color: var(--font-white1);
     border: 1px solid #ebebeb;
     margin-bottom: 32px;
+    color: var(--font-black1);
 }
 .intro-explane {
     margin-bottom: 16px;
@@ -208,6 +228,7 @@ h1 {
     background-color: #eef0f3;
     padding-top: 56px;
     min-width: 1000px;
+    padding: 56px 0;
 }
 
 .recommend-container {
@@ -231,6 +252,11 @@ h1 {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-bottom: 40px;
+}
+
+.recommend-title > a:hover {
+    text-decoration: underline;
 }
 
 .recommend-title > a::after {
@@ -246,4 +272,190 @@ h1 {
 
 .band-image {
     width: 100px;
+}
+.recommen-band-content{
+    display: flex;
+    width: 500px;
+    height: 100px;
+
+}
+.recommen-band-content > figure {
+    flex-shrink: 0;
+}
+
+.recommend-band-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 32px 0;
+
+}
+
+.band-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 8px;
+}
+
+.band-name > a {
+    
+    position: relative;
+    z-index: 5;
+    color: var(--font-black1);
+    font-weight: bold;
+
+
+}
+.band-name > a:hover {
+    text-decoration: underline;
+}
+
+.band-introduce {
+    color: var(--font-black2);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(500px - 100px - 16px);
+    font-size: 14px;
+}
+
+.band-status {
+    color: var(--font-black4);
+    font-size: 13px;
+
+}
+
+.band-mameber-count ::after {
+    content: '·';
+    margin-left: 4px;
+}
+
+.band-status > span {
+    margin: 0 4px;
+}
+
+.more-view {
+    display: flex;
+    width: fit-content;
+    background-color: white;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid #e3e3e3;
+    padding: 0 8px;
+    /* line-height: 24px; */
+    align-items: center;
+    font-size: 12px;
+    color: var(--font-black3);
+    position: relative;
+    z-index: 5;
+}
+.more-view :hover {
+    border: 1px solid #999;
+}
+.band-category {
+    color: var(--font-black1);
+    font-weight: bold;
+    margin-right: 4px;
+}
+.more-view::after {
+    content: '';
+    display: block;
+    border-top: 1px solid var(--font-black4);
+    border-right: 1px solid var(--font-black4);
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+}
+
+#app-download {
+    padding: 40px 0;
+}
+
+.app-download-container {
+    display: flex;
+    width: var(--container-size);
+    margin: 0 auto;
+    align-items: center;
+    gap: 16px;
+}
+.app-icon {
+    background: url(../img/spr_intro.png)no-repeat -162px 0;;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.google-play{
+    background: url(../img/spr_intro.png) no-repeat 0 0;
+	width: 160px;
+	height: 47px;
+
+}
+.app-store {
+    background: url(../img/spr_intro.png)no-repeat 0 -49px;
+	width: 160px;
+	height: 47px;;
+}
+
+
+.go-to-store {
+    display: flex;
+    gap: 8px;
+}
+.app-download-contents {
+    width: 100%;
+}
+.app-download-heading {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.app-download-heading + p {
+    color: var(--font-black3);
+    font-size: 14px;
+    
+}
+
+#agree-cookie {
+    background-color: rgba(34, 34,34, 0.96);
+    padding: 16px 0;
+    color: var(--font-white2);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+.cookie-container {
+    width: var(--container-size);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cookie-explain {
+    display: flex;
+}
+
+.cookie-explain > a {
+    color: var(--footer-font-dakr);
+    text-decoration: underline;
+}
+
+.cookie-explain > a:hover {
+    text-decoration: none;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.cookie-buttons > a {
+    display: block;
+    padding: 6px 12px;
+    background-color: var(--naver-green);
+    color: var(--font-white2);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.cookie-button > .no {
+    background-color: #999;
 }
