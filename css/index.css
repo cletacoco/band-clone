@@ -12,7 +12,7 @@
     --font-white2 : #fafafa;
     /* footer font color */
     --footer-font-light : #b3b3b3;
-    --footer-font-dakr : #777;
+    --footer-font-dark : #777;
     /* size */
     --container-size : 1000px;
 }
@@ -423,19 +423,24 @@ h1 {
     z-index: 10;
 }
 .cookie-container {
+    display: flex;
     width: var(--container-size);
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .cookie-explain {
     display: flex;
 }
 
+.cookie-explain > h2 {
+    margin-right: 8px;
+}
 .cookie-explain > a {
-    color: var(--footer-font-dakr);
+    color: var(--footer-font-dark);
     text-decoration: underline;
 }
+
 
 .cookie-explain > a:hover {
     text-decoration: none;
@@ -456,6 +461,6 @@ h1 {
     font-size: 14px;
     
 }
-.cookie-button > .no {
+.cookie-buttons > .no {
     background-color: #999;
 }
